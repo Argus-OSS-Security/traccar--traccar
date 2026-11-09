@@ -1,13 +1,14 @@
 name: Build Release
 
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: Version
-        required: true
-        default: preview
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       version:
+#         description: Version
+#         required: true
+#         default: preview
+# 
 jobs:
   build-server:
     name: Build server
